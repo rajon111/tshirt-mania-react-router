@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cart.css'
+import './Cart.css'
 
 const Cart = ({cart,handleRemoveFromCart}) => {
     //conditional rendering options
@@ -23,6 +24,8 @@ const Cart = ({cart,handleRemoveFromCart}) => {
                     </p>)
             }
              {command}
+             {cart.length !==4 ? <p>Keep adding</p> : <button>Remove All</button>}
+             {cart.length ===4 && <button className='ornage'>Review Order</button>}
         </div>
     );
 };

@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import OrderReview from './components/OrderReview/OrderReview';
+import Grandpa from './components/Grandpa/Grandpa';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/orderReview' element={<OrderReview></OrderReview>}></Route>
+        <Route path='/granda' element={<Grandpa></Grandpa>}></Route>
         
       </Routes>
      

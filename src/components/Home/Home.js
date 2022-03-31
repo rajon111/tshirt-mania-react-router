@@ -5,7 +5,7 @@ import TShirt from '../TShirt/TShirt';
 import './Home.css'
 
 const Home = () => {
-    const [tShirts,setTShirts] = useTShirts()
+    const [tShirts] = useTShirts()
 
     const [cart,setCart] = useState([])
 
